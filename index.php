@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Menu</title>
+    <title>Chevalier d'Or Toutes les Cartes</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -22,7 +22,6 @@
                 echo '<p>' . $card['name'] . '</p>';
                 echo '</a>';
                 echo '</div>';
-                // Log the link generated
                 error_log('Link generated: card.php?id=' . $card['id']);
             }
         } else {
