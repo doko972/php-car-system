@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.card p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.card-detail {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.card-detail img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.card-detail div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 1000px;
+}
+
+.card-detail h1 {
+    margin: 0 0 10px;
+    font-size: 2em;
+}
+
+.card-detail p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Bouton de choix de rôle */
+.btn-add-event--register {
+    margin-top: auto; /* Push the button to the bottom if needed */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.btn-add-event--register a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-add-event--register:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-detail img {
+        max-width: 80%;
+    }
+
+    .card-detail div {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-detail h1 {
+        font-size: 1.5em;
+    }
+
+    .card-detail p {
+        font-size: 1em;
+    }
+}
+
+  
